@@ -1,0 +1,129 @@
+.vo-head{
+    text-align:center;
+    color:#4d2203;
+    font-size:2rem;
+    margin:20px 0;
+}
+
+.orderslist{
+    width:95%;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+.orderlist-card{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items:center;
+    border:1px solid hotpink;
+    background:white;
+    border-radius:16px;
+
+    padding:15px 20px;
+    margin:15px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+    transition:all 0.25s ease;
+}
+
+
+.orderlist-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 24px rgba(0,0,0,0.12);
+}
+
+.orderlist-card h3,
+.orderlist-card h4,
+.orderlist-card p{
+    margin:0;
+}
+
+.complete-btn{
+    display:flex;
+    justify-content:start;
+    align-items:center;
+}
+
+.complete-btn button{
+    border:none;
+    background:#e91e63;
+    color:white;
+
+    padding:8px 18px;
+    border-radius:8px;
+
+    cursor:pointer;
+    font-weight:600;
+
+    transition:0.2s;
+}
+
+.complete-btn button:hover{
+    background:#c2185b;
+}
+
+
+@media screen and (max-width:1024px){
+
+    .orderslist{
+        width:95%;
+    }
+
+    .orderlist-card{
+        grid-template-columns: repeat(4,1fr);
+        padding:12px;
+        gap:10px;
+    }
+
+    .orderlist-card h3{
+        font-size:16px;
+    }
+
+    .orderlist-card p{
+        font-size:14px;
+    }
+
+    .complete-btn button{
+        padding:8px 14px;
+        font-size:13px;
+    }
+}
+
+
+@media screen and (max-width:767px){
+
+    .orderslist{
+        width:95%;
+    }
+
+    .orderlist-card{
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        gap:12px;
+
+        padding:15px;
+
+        text-align:center;
+    }
+
+    .complete-btn{
+        grid-column:1/3;
+    }
+
+    .complete-btn button{
+        width:100%;
+    }
+
+    .orderlist-card h3,
+    .orderlist-card h4{
+        font-size:15px;
+    }
+
+    .orderlist-card p{
+        font-size:13px;
+    }
+}

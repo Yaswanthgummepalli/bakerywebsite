@@ -1,0 +1,167 @@
+.c-top{
+   background-color: rgb(245, 242, 239);
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    height:250px;
+}
+.c-top-2 img{
+    width:300px;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+}
+.c-top-1 h1{
+    font-size: 40px;
+    margin: 20px 0px;
+    color:rgb(166, 61, 12)
+}
+.c-bottom{
+    margin-bottom: 40px;
+}
+.c-bottom h1{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+.c-bottom-1{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items: start;
+    padding-left:150px;
+   
+}
+.c-bottom-1-1{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    
+}
+.c-bottom-1-1 img{
+    width:30px;
+    height:30px;
+}
+
+@media screen and (max-width:1024px){
+
+    .c-top{
+        padding:20px;
+        gap:20px;
+        height:auto;
+    }
+
+    .c-top-1 h1{
+        font-size:32px;
+    }
+
+    .c-top-1 p{
+        font-size:15px;
+    }
+
+    .c-top-2 img{
+        width:250px;
+        height:180px;
+    }
+
+    .c-bottom-1{
+        padding-left:50px;
+        padding-right:20px;
+        gap:25px;
+    }
+
+    .c-bottom-1-1{
+        gap:15px;
+    }
+
+    .c-bottom-1-1 h2{
+        font-size:20px;
+    }
+
+    .c-bottom-1-1 p{
+        font-size:14px;
+    }
+}
+
+
+@media screen and (max-width:767px){
+
+    .c-top{
+        flex-direction:column;
+        text-align:center;
+        height:auto;
+        padding:25px 15px;
+    }
+
+    .c-top-1 h1{
+        font-size:28px;
+    }
+
+    .c-top-1 p{
+        font-size:15px;
+        line-height:1.5;
+    }
+
+    .c-top-2 img{
+        width:100%;
+        max-width:320px;
+        height:auto;
+    }
+
+    .c-bottom h1{
+        font-size:28px;
+    }
+
+    .c-bottom-1{
+        grid-template-columns:1fr;
+        padding:0 20px;
+        gap:20px;
+    }
+
+    .c-bottom-1-1{
+        justify-content:flex-start;
+        gap:15px;
+    }
+
+    .c-bottom-1-1 img{
+        width:25px;
+        height:25px;
+    }
+
+    .c-bottom-1-1 h2{
+        font-size:18px;
+        margin-bottom:5px;
+    }
+
+    .c-bottom-1-1 p{
+        font-size:14px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .c-top-1 h1{
+        font-size:24px;
+    }
+
+    .c-top-1 p{
+        font-size:14px;
+    }
+
+    .c-bottom h1{
+        font-size:24px;
+    }
+
+    .c-bottom-1{
+        padding:0 10px;
+    }
+
+    .c-bottom-1-1 h2{
+        font-size:16px;
+    }
+
+    .c-bottom-1-1 p{
+        font-size:13px;
+    }
+}

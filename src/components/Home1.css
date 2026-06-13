@@ -1,0 +1,175 @@
+
+
+body{
+margin:0;
+padding:0;
+overflow-X: hidden;
+}
+#top-section{
+    width:100%;
+    min-height:400px;
+  
+    background-color:antiquewhite;
+    display: flex;
+}
+#top-section-left{
+    width:50%;
+    height:100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+#top-section-left p{
+   padding:0;
+   margin:0;
+}
+#first{
+   font-size: 40px;
+   color:hotpink;
+   font-family:'Pacifico',cursive;
+}
+#second{
+    color:sienna;
+    font-size: 60px;
+    font-weight:700;
+}
+#third{
+    font-size: 20px;
+    padding:10px;
+}
+#ts-button{
+    margin:10px;
+    padding:10px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(207, 59, 133);
+    font-size: 20px;
+}
+#ts-button{
+    transition: transform 0.1s ease;
+}
+#ts-button:hover{
+     transform: scale(1.03);
+}
+#top-section-right{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width:80%;
+    max-width:400px;
+    height:auto;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+@media screen and (max-width:1024px){
+
+    #top-section{
+        min-height:350px;
+    }
+
+    #first{
+        font-size:32px;
+    }
+
+    #second{
+        font-size:48px;
+    }
+
+    #third{
+        font-size:18px;
+        text-align:center;
+    }
+
+    #ts-button{
+        font-size:18px;
+        padding:8px 30px;
+    }
+
+    .img{
+        width:85%;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    #top-section{
+        display:flex;
+        flex-direction:row; /* keep side by side */
+        align-items:center;
+        justify-content:center;
+        height:auto;
+        padding:20px 10px;
+    }
+
+    #top-section-left{
+        width:50%;
+        text-align:center;
+    }
+
+    #top-section-right{
+        width:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    #first{
+        font-size:24px;
+    }
+
+    #second{
+        font-size:34px;
+    }
+
+    #third{
+        font-size:14px;
+        line-height:1.4;
+        padding:5px;
+    }
+
+    #ts-button{
+        font-size:14px;
+        padding:8px 18px;
+    }
+
+    .img{
+        width:180px;
+        height:180px;
+        object-fit:cover;
+        border-radius:50%;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    #first{
+        font-size:20px;
+    }
+
+    #second{
+        font-size:28px;
+    }
+
+    #third{
+        font-size:12px;
+    }
+
+    .img{
+        width:140px;
+        height:140px;
+    }
+
+    #ts-button{
+        padding:6px 14px;
+        font-size:12px;
+    }
+}
