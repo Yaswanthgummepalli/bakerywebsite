@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from 'react'
 import './Menu.css'
-import cake from '../assets/cake.jpg'
 import { firestore } from '../firebase'
 import { collection,addDoc,getDocs ,deleteDoc,doc } from 'firebase/firestore'
 function Menu({user}) {

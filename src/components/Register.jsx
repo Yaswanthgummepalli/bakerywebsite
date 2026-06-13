@@ -1,6 +1,6 @@
 import React from 'react'
 import './Register.css'
-import {app,auth} from '../firebase'
+import {auth} from '../firebase'
 import {useState} from 'react'
 import {createUserWithEmailAndPassword} from "firebase/auth"
 import {Link} from 'react-router-dom'
@@ -39,7 +39,7 @@ function Register() {
 
     const validation=()=>{
       const formerror={}
-      if(password.trim()=="")
+      if(password.trim()==="")
       {
         formerror.password="password is required";
       }
