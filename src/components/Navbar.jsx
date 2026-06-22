@@ -26,7 +26,7 @@ function Navbar({user}) {
           <Link to='/About' className='links'>About</Link>
           <Link to="/Menu" className='links'>Menu</Link>
           <Link to='/contact' className='links'>Contact</Link>
-          {user?.email==='admin923@gmail.com' && <Link to="/orderslist" className='links'>Orderslist</Link>}
+          {(user?.email===process.env.REACT_APP_ADMIN || user?.email===process.env.REACT_APP_DEMO_EMAIL ) && <Link to="/orderslist" className='links'>Orderslist</Link>}
       </nav>
       <div className='register-login'>
       {user && (<Link to="/order"><button  className='order-btn'>order now</button></Link>)}

@@ -157,7 +157,7 @@ function Menu({user}) {
             <div className="menu-header">
                 <h1>Our menu</h1>
 
-                {user?.email==="admin923@gmail.com" && (<div className="menu-actions">
+                {(user?.email===process.env.REACT_APP_ADMIN || user?.email===process.env.REACT_APP_DEMO_EMAIL) && (<div className="menu-actions">
                     <button className="menu-action-btn" onClick={handleAddClick}>Add Item</button>
                     <button className="menu-action-btn delete" onClick={handleDeleteClick}>Delete Item</button>
                 </div>)}

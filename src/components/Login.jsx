@@ -21,6 +21,21 @@ function Login() {
         }
 
     }
+    const handleDemoAccess=async()=>{
+        try{
+            const demoemail=process.env.REACT_APP_DEMO_EMAIL;
+            const demopass=process.env.REACT_APP_DEMO_PASSWORD;
+            setEmail(demoemail);
+            setPassword(demopass);
+            await signInWithEmailAndPassword(auth,demoemail,demopass);
+            alert("login successful");
+            navigate('/');
+        }
+        catch(error){
+            alert ("login failed");
+
+        }
+    }
   return (
     <div className='login'>
         <div className='login-page'>
@@ -30,7 +45,7 @@ function Login() {
                 <button type="submit">Log in</button>
                 <p>if not registered? <Link to="/register"><strong>Sign Up</strong></Link></p>
             </form>
-
+            <button type="button" className='demo-btn' onClick={handleDemoAccess}>Recruiter Access</button>
         </div>
     </div>
   )
