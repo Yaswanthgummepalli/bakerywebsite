@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home1.css'
-import cake from '../assets/cake.jpg';
+import cake from '../assets/stephen-wheeler-LRIQuZyxKRM-unsplash.jpg'
 import {Link } from 'react-router-dom'
 function Home1() {
   return (

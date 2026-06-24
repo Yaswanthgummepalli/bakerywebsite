@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css'
-import cake from '../assets/cake.jpg'
+import cake from '../assets/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg'
 function Contact() {
   return (
     <div className='ram'>
